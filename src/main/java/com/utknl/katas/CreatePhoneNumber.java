@@ -44,8 +44,9 @@ public class CreatePhoneNumber {
 
 }
 
-/**
- * Good ones
- * <p>
- * return String.format("(%d%d%d) %d%d%d-%d%d%d%d", java.util.stream.IntStream.of(numbers).boxed().toArray());
+/*
+  Good ones:
+
+  return String.format("(%d%d%d) %d%d%d-%d%d%d%d", java.util.stream.IntStream.of(numbers).boxed().toArray());
+
  */
