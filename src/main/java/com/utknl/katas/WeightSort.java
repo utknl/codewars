@@ -26,6 +26,7 @@ package com.utknl.katas;
  * between two consecutive numbers
  *
  * * Don't modify the input
+ *
  * * For C: The result is freed
  *
  */
