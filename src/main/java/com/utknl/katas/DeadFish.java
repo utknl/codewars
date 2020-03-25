@@ -1,9 +1,7 @@
 package com.utknl.katas;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/java
@@ -26,8 +24,8 @@ public class DeadFish {
     public static int[] parse(String data) {
         int initial = 0;
         List<Integer> list = new ArrayList<>();
-        List<String> collect = Arrays.stream(data.split("")).collect(Collectors.toList());
-        for (String s : collect) {
+
+        for (String s : data.split("")) {
             switch (s) {
                 case "i":
                     initial += 1;
@@ -43,9 +41,10 @@ public class DeadFish {
                     break;
             }
         }
+
         int[] array = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
-            array[i] =list.get(i);
+            array[i] = list.get(i);
         }
         return array;
     }
