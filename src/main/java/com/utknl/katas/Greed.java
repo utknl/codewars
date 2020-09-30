@@ -22,8 +22,11 @@ import java.util.stream.*;
  * 1 1000 + 100 = 1100 2 4 4 5 4 400 + 50 = 450
  */
 public class Greed {
-    static List<Rule> rules = List.of(new Rule(1, 3, 1000), new Rule(2, 3, 200), new Rule(3, 3, 300),
-            new Rule(4, 3, 400), new Rule(5, 3, 500), new Rule(6, 3, 600), new Rule(1, 1, 100), new Rule(5, 1, 50));
+    static List<Rule> rules = List.of(new Rule(1, 3, 1000),
+            new Rule(2, 3, 200), new Rule(3, 3, 300),
+            new Rule(4, 3, 400), new Rule(5, 3, 500),
+            new Rule(6, 3, 600), new Rule(1, 1, 100),
+            new Rule(5, 1, 50));
 
     public static List<Rule> getRules(int number) {
         return rules.stream().filter(it -> it.getNumber() == number).collect(Collectors.toList());
