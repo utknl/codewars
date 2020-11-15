@@ -1,7 +1,9 @@
 package com.utknl.katas;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/java
